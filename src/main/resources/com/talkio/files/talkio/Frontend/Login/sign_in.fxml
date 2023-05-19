@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: rgba(25,25,25,0.95);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.talkio.files.talkio.Frontend.Login.SignInController">
+   <children>
+       <AnchorPane layoutX="531.0" prefHeight="700.0" prefWidth="669.0" style="-fx-background-color: rgba(25,25,24,0.95);">
+           <children>
+
+           </children>
+       </AnchorPane>
+
+
+      <ImageView fitHeight="57.0" fitWidth="137.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="83.0" layoutY="177.0" prefHeight="32.0" prefWidth="109.0" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="219.0" text="New to talkieo?" textFill="#c9c9c9">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="201.0" layoutY="215.0" prefHeight="23.0" text="Sign up for free" textFill="#40a3ff">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <MFXTextField fx:id="emailBox" floatMode="DISABLED" layoutX="83.0" layoutY="281.0" prefHeight="45" prefWidth="300" />
+      <MFXPasswordField fx:id="passBox" floatMode="DISABLED" layoutX="83.0" layoutY="335.0" prefHeight="45" prefWidth="300" />
+      <MFXButton fx:id="loginButton" layoutX="83.0" layoutY="395.0" prefHeight="45" prefWidth="127.0" text="Sign in" />
+      <MFXButton fx:id="googleButton" layoutX="224.0" layoutY="395.0" prefHeight="45" prefWidth="160.0" text="">
+         <graphic>
+         <FontAwesomeIconView fill="#0084ff" glyphName="GOOGLE" size="20" />
+      </graphic>
+      </MFXButton>
+      <MFXButton layoutX="83.0" layoutY="468.0" prefHeight="36.0" prefWidth="127.0" text="Go back" style="-fx-background-color: #D8FB76; -fx-font-size: 15px;-fx-font-family: Calibri; -fx-font-weight: bold" fx:id="go_back" />
+      <FontAwesomeIconView glyphName="ANGLE_LEFT" layoutX="106.0" layoutY="492.0" size="18" text="" />
+   </children>
+</AnchorPane>
